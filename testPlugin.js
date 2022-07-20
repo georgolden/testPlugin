@@ -2,9 +2,9 @@
 
 const crud = (init) => {
   const iface = {};
-  const { entities, model } = init;
-  for (const entity of entities) {
-    iface['schema' + entity] = async () => model.entities.get(entity);
+  const { entities } = init;
+  for (const [entity, data] of Object.entries(entities)) {
+    iface['schema' + entity] = async () => data;
   }
 };
 
