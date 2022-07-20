@@ -1,6 +1,6 @@
 'use strict';
 
-const crud = (init) => {
+const crud = (init) => () => {
   const iface = {};
   const { entities } = init;
   for (const [entity, data] of Object.entries(entities)) {
