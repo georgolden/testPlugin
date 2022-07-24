@@ -1,6 +1,6 @@
 {
   "name": "@oldendev/testplugin",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "CRUD plugin for Metarhia impress, metasql",
   "main": "testPlugin.js",
   "repository": {
